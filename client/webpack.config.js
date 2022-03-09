@@ -13,13 +13,10 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
-    output: {
-      filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
-    },
+
     plugins: [
       new HtmlWebpackPlugin({
-        template: ' ./index.html',
+        template: './index.html',
         title: 'Just Another Text Editor'
       }),
       new InjectManifest({
@@ -27,7 +24,7 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
-        fingerpritns: false,
+        fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'JATE',
@@ -39,14 +36,15 @@ module.exports = () => {
         orientation: 'portrait',
         display: 'standalone',
         icons: [
-        {
-          src: path.resolve('src/images/logo.png'),
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('assets', 'icons'),
-        },
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+
+
         ]
       })
-      
     ],
 
     module: {
@@ -61,7 +59,7 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
@@ -71,6 +69,10 @@ module.exports = () => {
           },
         },
       ],
+    },
+    output: {
+      filename: '[name].bundle.js',
+      path: path.resolve(__dirname, 'dist'),
     },
   };
 };
