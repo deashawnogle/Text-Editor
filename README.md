@@ -1,4 +1,4 @@
 # Text-Editor
 
 
-https://git.heroku.com/text-editor-daesang-ogle.git
+https://text-editor-daesang-ogle.herokuapp.com/
