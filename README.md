@@ -57,7 +57,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Links
 ------------
-<a href= "https://github.com/deashawnogle/Text-Editor">Git Hub Repository </a>
+<a href= "https://github.com/deashawnogle/Text-Editor">Git Hub Repository </a> <br>
 <a href= "https://text-editor-daesang-ogle.herokuapp.com/"> Heroku App </a>
 
 ## Screenshot
