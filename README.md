@@ -11,6 +11,7 @@ Your task is to build a text editor that runs in the browser. The app will be a 
 
 - [Table of Content](#table-of-content)
 - [User Story](#user-story)
+- [Tool](#tool)
 - [Links](#links)
 - [Screenshot](#screenshot)
 - [Contact](#contact)
@@ -55,6 +56,15 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
+## Tool
+------------
+```md
+- Node JS
+- Webpack
+- IndexedDb
+- Express
+```
+
 ## Links
 ------------
 <a href= "https://github.com/deashawnogle/Text-Editor">Git Hub Repository </a> <br>
@@ -62,7 +72,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Screenshot
 ------------
-
+<img src = "./Screenshot/JATE.png">
 
 
 ## Contact
